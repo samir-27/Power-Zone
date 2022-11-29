@@ -1,0 +1,28 @@
+.tr-text{
+    font-size: 6vw;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+   
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.2vw #00ffe5;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+
+}
+.prg{
+    font-size: 2vw;
+    color:#A1E3D8 ;
+}
+.overlay{
+
+    min-height: 100vh;
+    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp),#57dada;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+.center{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

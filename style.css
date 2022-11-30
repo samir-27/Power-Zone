@@ -1,22 +1,29 @@
+
 .tr-text{
     font-size: 6vw;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
    
     text-transform: uppercase;
-    -webkit-text-stroke: 0.2vw #00ffe5;
+    -webkit-text-stroke: 0.2vw #17B978;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
-
+    border: 3px solid #A7FF83;
 }
 .prg{
-    font-size: 2vw;
-    color:#A1E3D8 ;
+    font-size: 1.5vw;
+    color:#A7FF83 ;
+    text-align: center;
+    margin: 50px 0;
 }
+.border1{
+    border: 3px solid #A7FF83 ;
+}
+
 .overlay{
 
     min-height: 100vh;
-    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp),#57dada;
+    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp),#071a5272;
     background-size: cover;
     background-blend-mode: multiply;
   }
@@ -25,4 +32,36 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.card-services{
+    background-color: #17B978;
+    text-align: center;
+    color: #050505;
+    /* box-shadow: 2px 2px 2px #A7FF83; */
+    border-radius: 10px;
+    border: 3px solid #A7FF83;
+}
+#services{
+    background-color: #001314eb;
+}
+
+#services h5{
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+    line-height: 2;
+    font-weight: 700;
+}
+#pricing{
+    background-color: #021f21eb;
+}
+ .card-header{
+    background-color:#17B978 ;
+}
+.card-pricing{
+    background-color: #8eebc9;
+    border: 3px solid #A7FF83;
+}
+#gallary{
+    background-color: #021f21eb;
 }

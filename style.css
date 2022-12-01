@@ -3,12 +3,13 @@
     font-size: 6vw;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
-   
+    text-align: center;
     text-transform: uppercase;
     -webkit-text-stroke: 0.2vw #17B978;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
     border: 3px solid #A7FF83;
+   
 }
 .prg{
     font-size: 1.5vw;
@@ -20,7 +21,7 @@
     border: 3px solid #A7FF83 ;
 }
 
-.overlay{
+.overlay-home{
 
     min-height: 100vh;
     background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp),#071a5272;
@@ -52,7 +53,7 @@
     line-height: 2;
     font-weight: 700;
 }
-#pricing{
+#pricing,#team{
     background-color: #021f21eb;
 }
  .card-header{
@@ -63,5 +64,53 @@
     border: 3px solid #A7FF83;
 }
 #gallary{
-    background-color: #021f21eb;
+    background-color: #001314eb;
 }
+.test-img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.box-1,.box-2,.box-3 {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0 ;
+    padding: 0 50px 0 50px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #17b978a1 ;
+  }
+  
+  
+  .box-2:hover .overlay {
+    opacity: 1;
+  }
+  
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

@@ -1,5 +1,12 @@
+.navbar-expand-lg{
+   
+   
+   
+   
+    z-index: 1
+}
 
-.tr-text{
+.tr-text {
     font-size: 6vw;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -9,33 +16,36 @@
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
     border: 3px solid #A7FF83;
-   
+
 }
-.prg{
+
+.prg {
     font-size: 1.5vw;
-    color:#A7FF83 ;
+    color: #A7FF83;
     text-align: center;
     margin: 50px 0;
 }
-.border1{
-    border: 3px solid #A7FF83 ;
+
+.border1 {
+    border: 3px solid #A7FF83;
 }
 
-.overlay-home{
+.overlay-home {
 
     min-height: 100vh;
-    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp),#071a5272;
+    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp), #071a5272;
     background-size: cover;
     background-blend-mode: multiply;
-  }
-.center{
+}
+
+.center {
     display: flexbox;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.card-services{
+.card-services {
     background-color: #17B978;
     text-align: center;
     color: #050505;
@@ -43,113 +53,188 @@
     border-radius: 10px;
     border: 3px solid #A7FF83;
 }
-#services{
+
+#services {
     background-color: #001314eb;
 }
 
-#services h5{
+#services h5 {
     font-size: 30px;
     margin: 10px 0 10px 0;
     line-height: 2;
     font-weight: 700;
 }
-#pricing,#team{
+
+#pricing,
+#team {
     background-color: #021f21eb;
 }
- .card-header{
-    background-color:#17B978 ;
+
+.card-header {
+    background-color: #17B978;
 }
-.card-pricing{
+
+.card-pricing {
     background-color: #8eebc9;
     border: 3px solid #A7FF83;
 }
-#gallary{
+
+#gallary {
     background-color: #001314eb;
 }
-.test-img{
-    width: 10%;
-    border-radius: 100%;
-    margin: 20px;
+
+
+
+
+ .zoom{
+
+    transition: transform .2s;
+    /* Animation */
+
+    margin: 0 auto;
 }
 
-.box-2:hover {
+.zoom:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
-    width: 50%;
-    overflow:visible;
-  }
-  
-  .image {
-    display: block;
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    background: #f9f9f9;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif
+}
+
+
+.title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.content {
+    position: relative;
     width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden
+    
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right:0 ;
-    padding: 0 50px 0 50px;
     height: 100%;
     width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #17b978a1 ;
-  }
-  
-  
-  .box-2:hover .overlay {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
     opacity: 1;
-  }
-    
-  .zoom img {
-    width: 100%;
-    transition: 0.5s all ease-in-out;
+   
+    margin: 0 auto;
 }
-  
-.zoom:hover img {
-    transform: scale(1.1);
+
+.content-image {
+    width: 100%
 }
-  
-  .text {
-    color: white;
-    font-size: 20px;
+
+
+
+.content-details {
     position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
     top: 50%;
     left: 50%;
+    opacity: 0;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
-  }
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
 
-  #photo{
-    
-        text-align: center;
-        background-image:
-url("https://wallpaperaccess.com/full/1633774.jpg");
-       
-        min-height: 100vh;
-        width: 100vw;
-        background-size: cover;
-        background-blend-mode: multiply;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-.overlay-photo{
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em
+}
+
+.fadeIn-bottom {
+    top: 80%
+}
+
+
+
+
+
+
+#photo {
+
+    text-align: center;
+    background-image:
+    url("https://wallpaperaccess.com/full/7010663.jpg");
+
     min-height: 100vh;
-    background: #071a5272;
+    width: 100vw;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.overlay-photo {
+    min-height: 100vh;
+    background: #8197df58;
     background-size: cover;
     background-blend-mode: multiply;
 }
- #photo h1{
+
+#photo h1 {
     font-size: 70px;
     color: #17B978;
- }
- #photo h3{
+}
+
+#photo h3 {
     font-size: 30px;
     color: aquamarine;
     padding-bottom: 30px;
- }
-    
+}
+
+#about{
+    background-color: #050505;
+}
+#about h2,h3{
+    font-size: 35px;
+    color: #17B978;
+}
+#about p{
+    color: #A7FF83;
+    margin-bottom: 30px;
+}

@@ -72,9 +72,10 @@
     margin: 20px;
 }
 
-.box-1,.box-2,.box-3 {
-    position: relative;
+.box-2:hover {
+
     width: 50%;
+    overflow:visible;
   }
   
   .image {
@@ -101,7 +102,15 @@
   .box-2:hover .overlay {
     opacity: 1;
   }
+    
+  .zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
   
+.zoom:hover img {
+    transform: scale(1.1);
+}
   
   .text {
     color: white;
@@ -114,3 +123,33 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  #photo{
+    
+        text-align: center;
+        background-image:
+url("https://wallpaperaccess.com/full/1633774.jpg");
+       
+        min-height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+.overlay-photo{
+    min-height: 100vh;
+    background: #071a5272;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+ #photo h1{
+    font-size: 70px;
+    color: #17B978;
+ }
+ #photo h3{
+    font-size: 30px;
+    color: aquamarine;
+    padding-bottom: 30px;
+ }
+    

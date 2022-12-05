@@ -1,9 +1,21 @@
 .navbar-expand-lg{
-   
-   
-   
-   
     z-index: 1
+}
+body{
+    background-color: #000000;
+}
+
+ .zoom{
+
+    transition: transform 0.4s;
+    /* Animation */
+
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .tr-text {
@@ -12,28 +24,26 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.2vw #17B978;
+    -webkit-text-stroke: 0.2vw #CF0A0A;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
-    border: 3px solid #A7FF83;
+    border: 3px solid #DC5F00;
 
 }
 
 .prg {
     font-size: 1.5vw;
-    color: #A7FF83;
+    color: #DC5F00;
     text-align: center;
     margin: 50px 0;
 }
 
-.border1 {
-    border: 3px solid #A7FF83;
-}
+
 
 .overlay-home {
 
     min-height: 100vh;
-    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp), #071a5272;
+    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp), #000000a3;
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -45,19 +55,21 @@
     flex-direction: column;
 }
 
+/* ================================================================================================================================
+                                                    Services
+================================================================================================================================ */
+#services {
+    background-color: #000000;
+}
+
 .card-services {
-    background-color: #17B978;
+    background-color: #b97b17;
     text-align: center;
     color: #050505;
     /* box-shadow: 2px 2px 2px #A7FF83; */
     border-radius: 10px;
-    border: 3px solid #A7FF83;
+    border: 3px solid #f94646;
 }
-
-#services {
-    background-color: #001314eb;
-}
-
 #services h5 {
     font-size: 30px;
     margin: 10px 0 10px 0;
@@ -65,49 +77,30 @@
     font-weight: 700;
 }
 
-#pricing,
-#team {
-    background-color: #021f21eb;
-}
-
+/* ================================================================================================================================
+                                                    Pricing
+================================================================================================================================ */
 .card-header {
-    background-color: #17B978;
+    background-color: #CF0A0A;
+    color: white;
 }
 
 .card-pricing {
-    background-color: #8eebc9;
-    border: 3px solid #A7FF83;
+    background-color: #f58f46;
+    border: 3px solid #ffae01;
 }
+
+/* ================================================================================================================================
+                                                    gallary
+================================================================================================================================ */
 
 #gallary {
     background-color: #001314eb;
 }
 
-
-
-
- .zoom{
-
-    transition: transform .2s;
-    /* Animation */
-
-    margin: 0 auto;
-}
-
-.zoom:hover {
-    transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-body {
-    background: #f9f9f9;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif
-}
-
-
+/* ================================================================================================================================
+                                                    team
+================================================================================================================================ */
 .title {
     color: #1a1a1a;
     text-align: center;
@@ -124,7 +117,7 @@ body {
 }
 
 .content .content-overlay {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(213, 77, 23, 0.777);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -191,7 +184,9 @@ body {
 }
 
 
-
+/* ================================================================================================================================
+                                                    photo
+================================================================================================================================ */
 
 
 
@@ -211,30 +206,59 @@ body {
 
 .overlay-photo {
     min-height: 100vh;
-    background: #8197df58;
+    background: #00000096;
     background-size: cover;
     background-blend-mode: multiply;
 }
 
 #photo h1 {
     font-size: 70px;
-    color: #17B978;
+    color: #c80a0a;
 }
 
 #photo h3 {
     font-size: 30px;
-    color: aquamarine;
+    color: #DC5F00;
     padding-bottom: 30px;
 }
+
+/* ================================================================================================================================
+                                                   about
+================================================================================================================================ */
 
 #about{
     background-color: #050505;
 }
 #about h2,h3{
     font-size: 35px;
-    color: #17B978;
+    color: #b91c17;
 }
 #about p{
-    color: #A7FF83;
+    color: #DC5F00;
     margin-bottom: 30px;
+}
+
+/* ================================================================================================================================
+                                                    branch
+================================================================================================================================ */
+#branch{
+    background-color: #000000;
+}
+.branch-img{
+ height: 250px;
+   width: 250px;
+   overflow: hidden;
+}
+.cover{
+    height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+.branch-contant{
+    color: #DC5F00;
+    width: 130%;
+    margin-right: 30px;
+}
+#footer{
+    background-color: #000000;
 }

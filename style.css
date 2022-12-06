@@ -3,6 +3,7 @@
 }
 body{
     background-color: #000000;
+    
 }
 
  .zoom{
@@ -27,13 +28,13 @@ body{
     -webkit-text-stroke: 0.2vw #CF0A0A;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
-    border: 3px solid #DC5F00;
+    border: 3px solid #ffae01;
 
 }
 
 .prg {
     font-size: 1.5vw;
-    color: #DC5F00;
+    color: #fff;
     text-align: center;
     margin: 50px 0;
 }
@@ -54,6 +55,13 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.border1{
+    border: 3px solid #ffae01;
+    border-radius: 5px;
+}
+.animate__animated{
+    animation-duration: 2.5s;
+}
 
 /* ================================================================================================================================
                                                     Services
@@ -63,7 +71,7 @@ body{
 }
 
 .card-services {
-    background-color: #b97b17;
+    background-color: #ffae01;
     text-align: center;
     color: #050505;
     /* box-shadow: 2px 2px 2px #A7FF83; */
@@ -86,7 +94,7 @@ body{
 }
 
 .card-pricing {
-    background-color: #f58f46;
+    background-color: #ffaf01;
     border: 3px solid #ffae01;
 }
 
@@ -95,14 +103,14 @@ body{
 ================================================================================================================================ */
 
 #gallary {
-    background-color: #001314eb;
+    background-color: #000000;
 }
 
 /* ================================================================================================================================
                                                     team
 ================================================================================================================================ */
 .title {
-    color: #1a1a1a;
+    color: #000000;
     text-align: center;
     margin-bottom: 10px
 }
@@ -117,7 +125,7 @@ body{
 }
 
 .content .content-overlay {
-    background: rgba(213, 77, 23, 0.777);
+    background: #ffaf01bb;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -206,7 +214,7 @@ body{
 
 .overlay-photo {
     min-height: 100vh;
-    background: #00000096;
+    background: #0000007e;
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -218,7 +226,7 @@ body{
 
 #photo h3 {
     font-size: 30px;
-    color: #DC5F00;
+    color: #ffaf01;
     padding-bottom: 30px;
 }
 
@@ -231,10 +239,10 @@ body{
 }
 #about h2,h3{
     font-size: 35px;
-    color: #b91c17;
+    color: #ffae01;
 }
 #about p{
-    color: #DC5F00;
+    color: #fff;
     margin-bottom: 30px;
 }
 
@@ -255,10 +263,26 @@ body{
   object-fit: cover;
 }
 .branch-contant{
-    color: #DC5F00;
+ 
     width: 130%;
     margin-right: 30px;
 }
+#branch h2{
+    color: #CF0A0A;
+}
+#branch h5{
+    color: #ffae01;
+}
+#branch p{
+    color: white;
+}
+
+/* ================================================================================================================================
+                                                    footer
+================================================================================================================================ */
 #footer{
     background-color: #000000;
+}
+#footer p,hr{
+    color: #ffae01;
 }

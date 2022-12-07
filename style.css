@@ -20,7 +20,7 @@ body{
 }
 
 .tr-text {
-    font-size: 6vw;
+    font-size: 100px;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     text-align: center;
@@ -32,8 +32,9 @@ body{
 
 }
 
+
 .prg {
-    font-size: 1.5vw;
+    font-size: 25px;
     color: #fff;
     text-align: center;
     margin: 50px 0;
@@ -44,7 +45,7 @@ body{
 .overlay-home {
 
     min-height: 100vh;
-    background: url(https://preview.colorlib.com/theme/gymlife/img/hero/hero-1.jpg.webp), #000000a3;
+    background: url(/img/overlay/overlay-1.webp), #00000082;
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -64,7 +65,189 @@ body{
 }
 
 /* ================================================================================================================================
-                                                    Services
+                                                                Navbar
+================================================================================================================================ */
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.html{
+    font-size: 62.5%;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+
+
+.navbar{
+
+    position: fixed;
+    width: 100%;
+ 
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    color: #ffae01;
+    order: 1;
+    font-size: 1.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #ffae01;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+  
+   
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        margin-top: 70px;
+        background: transparent;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+
+        transition: transform 0.5s ease-in-out;
+   
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        color: #ffae01;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+
+/* ================================================================================================================================
+                                                            Services
 ================================================================================================================================ */
 #services {
     background-color: #000000;
@@ -84,9 +267,11 @@ body{
     line-height: 2;
     font-weight: 700;
 }
-
+.card-services:hover{
+    background-color: #fff;
+}
 /* ================================================================================================================================
-                                                    Pricing
+                                                        Pricing
 ================================================================================================================================ */
 .card-header {
     background-color: #CF0A0A;
@@ -97,9 +282,12 @@ body{
     background-color: #ffaf01;
     border: 3px solid #ffae01;
 }
-
+.card-pricing:hover{
+    background-color: white;
+    border: 3px solid #fff;
+}
 /* ================================================================================================================================
-                                                    gallary
+                                                                gallary
 ================================================================================================================================ */
 
 #gallary {
@@ -107,7 +295,7 @@ body{
 }
 
 /* ================================================================================================================================
-                                                    team
+                                                                team
 ================================================================================================================================ */
 .title {
     color: #000000;
@@ -141,7 +329,7 @@ body{
 
 .content:hover .content-overlay {
     opacity: 1;
-   
+    
     margin: 0 auto;
 }
 
@@ -193,17 +381,17 @@ body{
 
 
 /* ================================================================================================================================
-                                                    photo
+                                                            photo
 ================================================================================================================================ */
 
 
 
 #photo {
-
+    
     text-align: center;
     background-image:
-    url("https://wallpaperaccess.com/full/7010663.jpg");
-
+    url("/img/overlay/overlay-2.webp");
+    
     min-height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -231,7 +419,7 @@ body{
 }
 
 /* ================================================================================================================================
-                                                   about
+                                                                about
 ================================================================================================================================ */
 
 #about{
@@ -247,23 +435,23 @@ body{
 }
 
 /* ================================================================================================================================
-                                                    branch
+                                                                branch
 ================================================================================================================================ */
 #branch{
     background-color: #000000;
 }
 .branch-img{
- height: 250px;
-   width: 250px;
-   overflow: hidden;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
 }
 .cover{
     height: 250px;
-  width: 250px;
-  object-fit: cover;
+    width: 250px;
+    object-fit: cover;
 }
 .branch-contant{
- 
+    
     width: 130%;
     margin-right: 30px;
 }
@@ -278,7 +466,7 @@ body{
 }
 
 /* ================================================================================================================================
-                                                    footer
+                                                                footer
 ================================================================================================================================ */
 #footer{
     background-color: #000000;
@@ -286,3 +474,39 @@ body{
 #footer p,hr{
     color: #ffae01;
 }
+/* ================================================================================================================================
+                                                        responsive css
+================================================================================================================================ */
+
+    @media only screen and (max-width: 1016px) {
+        .tr-text{
+          font-size: 60px;
+        }
+        .prg{
+          font-size: 20px;
+        }
+    }
+    @media only screen and (max-width: 775px) {
+      .tr-text{
+        font-size: 40px;
+      }
+      .prg{
+        font-size: 15px;
+      }
+      #photo h1{
+        font-size: 50px;
+      }
+       
+      h1,h2,h3,h4,h5,p{
+        text-align: center;
+      }
+      .branch-contant {
+        width:100%;
+        margin-right: 0px;
+      }
+    }
+    @media only screen and (max-width: 1016px) {
+    #gallary .responsive{
+        width: 100vw;
+    }
+    }
